@@ -97,6 +97,7 @@
 				console.log("str2",str2)
 
 				console.log("crc1",byte.intToByte(0x5a));
+				console.log("crc1",byte.intToByte(90));
 				console.log("crc2",byte.intToByte(0xa5));
 				console.log("crc3",byte.intToByte(0+4));
 				
@@ -114,7 +115,18 @@
 				
 				console.log("进一法",Math.ceil(6/5));
 				
-				console.log("txt",this.txt.split(":"))
+				console.log("txt",this.txt.split(":"));
+				
+				var sd = parseInt("1d",16) *256 + parseInt('2d',16);
+				console.log("sd",parseInt(sd/10))
+				
+				//十进制转2进制
+				var fk = parseInt('a',16);
+				console.log(fk.toString(2))
+				
+				var result = '11100011'
+				console.log(result[2])
+				console.log(result[3])
 			}
 		}
 	}
